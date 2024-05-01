@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Vacancies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .job {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job:last-child {
+            border-bottom: none;
+        }
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .job-location {
+            font-style: italic;
+        }
+        .job-description {
+            margin-top: 10px;
+        }
+        .apply-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .apply-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Job Vacancies</h1>
+    </header>
+    <div class="container">
+        <div class="job">
+            <div class="job-info">
+                <form action="http://localhost/forgehub/displayjob.php" method="post"></form>
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-location">New York, NY</div>
+                <div class="job-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget gravida ex.</div>
+            </div>
+            <button class="apply-button">Apply Now</button>
+        </div>
+        <div class="job">
+            <div class="job-info">
+                <div class="job-title">Backend Developer</div>
+                <div class="job-location">San Francisco, CA</div>
+                <div class="job-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+            </div>
+            <button class="apply-button">Apply Now</button>
+        </div>
+        <div class="job">
+            <div class="job-info">
+                <div class="job-title">Graphic Designer</div>
+                <div class="job-location">Los Angeles, CA</div>
+                <div class="job-description">Nulla euismod erat ac augue efficitur, a feugiat turpis placerat.</div>
+            </div>
+            <button class="apply-button">Apply Now</button>
+        </div>
+        <!-- Add more job listings here -->
+    </div>
+</body>
+</html>
